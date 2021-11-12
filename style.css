@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:wght@400;700&display=swap");
+
+h1,
+h2 {
+  font-family: "Courgette", cursive;
+}
+
+.wrapper {
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  animation: typing 7s linear 2s infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(243, 239, 8);
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 1rem,1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes typing {
+ 0%{ width: 0;}
+ 25%{ width: 25%;}
+ 50% {width: 505;}
+ 100%{width: 100%;}
+}
+    
+
+.a{
+  font-size: clamp(2rem, 5vw, 7rem);
+}
+.b{
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+.one {
+  background: linear-gradient(to top, #1e3c72 30%, #2a5298);  
+  position: relative;
+  height: 50rem;
+}
+
+.one::after,
+.one::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background:#1e3c72;
+  bottom: -1em;
+  z-index: 100;
+}
+
+.one::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.one::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+/* about */
+/* about */
+/* about */
+/* about */
+/* about */
+
+.about-me {
+  background: linear-gradient(45deg,#5f0a87 , #a4508b, #233329, #63d471); 
+  position: relative;
+  color: #fffffb;
+  padding: 15vh 0;
+  z-index: 10;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  margin-bottom: -10vw;
+  height: 90rem;
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+  }
+} 
+
+.about-me p {
+  font-family: "Courier Prime", monospace;
+}
+
+.para{
+  font-size: clamp(1.2rem, 1.4vw, 4rem);
+}
+.ul{
+  margin-bottom: 10%;
+}
+
+.heading{
+  font-size: clamp(6rem, 10vw, 10rem);
+  color: rgb(243, 239, 8);
+}
+
+/* gallery */
+/* gallery */
+/* gallery */
+/* gallery */
+/* gallery */
+/* gallery */
+/* gallery */
+/* gallery */
+
+.gallery-bg {
+  background: linear-gradient(135deg, #19a186, #f2cf43, #233329, #63d471); 
+  font-size: 20px;
+  width: auto;
+  height: 100%;
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+img {
+  max-width: 100%;
+}
+.gallery {
+  padding: 80px 0;
+  border-radius: 10px;
+}
+.gallery img {
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+#gallery-modal .modal-img {
+  width: 100%;
+}
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+
+footer {
+  margin-top: -6vh;
+  color: #fffffb;
+}
+
+/* back to top */
+/* back to top */
+/* back to top */
+/* back to top */
+/* back to top */
+/* back to top */
+/* back to top */
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: transparent;
+}
+
+/* form */
+/* form */
+/* form */
+/* form */
+/* form */
+
+form {
+  font-family: "Courier Prime", monospace;
+}
+
+.from-section {
+  padding: 15vh 0;
+  background-image: url("/undraw_contact_us_15o2.svg");
+  background-color: rgba(1, 44, 38, 0.678);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.from-css {
+  background-color: rgba(1, 44, 38, 0.678);
+  box-shadow: #55554f;
+}
+
+footer {
+  font-family: "Courier Prime", monospace;
+}
+
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.spinner-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.spinner::before,
+.spinner:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.spinner:before {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #c59d5f 0%, #515151 100%);
+  animation: spin 0.5s infinite linear;
+}
+
+.spinner:after {
+  width: 90%;
+  height: 90%;
+  background-color: #f3f0f0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
